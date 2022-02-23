@@ -1,4 +1,4 @@
-package com.example.crudcomspring;
+package com.example.crudcomJPA;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
