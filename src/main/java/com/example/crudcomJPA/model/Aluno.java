@@ -11,16 +11,12 @@ public class Aluno implements Serializable{
     @Id
     private int id;
     private String nome;
-    private int idade;
-    @OneToOne
-    @JoinColumn(name = "id_endereco")
-    private Endereco endereco;
+    private String matricula;
 
 
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
@@ -33,13 +29,12 @@ public class Aluno implements Serializable{
         this.nome = nome;
     }
 
-    public int getIdade() {
-        return idade;
+    public String getMatricula() {
+        return matricula;
+    }
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
     }
 
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
-//getters e setters
 
 }

@@ -1,4 +1,4 @@
-package com.example.crudcomJPA.repository;
+package com.example.crudcomJPA.dao;
 
 import com.example.crudcomJPA.model.Aluno;
 import org.springframework.stereotype.Repository;
@@ -18,7 +18,7 @@ public class AlunoRepository {
             em.persist(aluno);
         }
 
-        public Aluno aluno(Long id){
+        public Aluno aluno(int id){
             return em.find(Aluno.class, id);
         }
 
@@ -27,7 +27,7 @@ public class AlunoRepository {
             return query.getResultList();
         }
 
-        public void remove(Long id){
+        public void remove(int id){
             Aluno a = em.find(Aluno.class, id);
             em.remove(a);
         }
